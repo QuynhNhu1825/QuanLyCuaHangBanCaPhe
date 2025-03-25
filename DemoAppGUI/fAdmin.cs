@@ -10,19 +10,19 @@ using System.Windows.Forms;
 
 namespace DemoAppGUI
 {
-    public partial class fQuanLyBan : Form
+    public partial class fAdmin: Form
     {
-        public fQuanLyBan()
+        public fAdmin()
         {
             InitializeComponent();
         }
 
-        private void thôngTinTàiKhoảnToolStripMenuItem_Click(object sender, EventArgs e)
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        private void lblID_Click(object sender, EventArgs e)
         {
 
         }
@@ -30,12 +30,6 @@ namespace DemoAppGUI
         private void button1_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void adinToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            fAdmin f = new fAdmin();
-            f.ShowDialog();
         }
     }
 }
