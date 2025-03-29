@@ -35,5 +35,18 @@ namespace DemoAppGUI
             f.ShowDialog();
             this.Show();
         }
+
+        private void ckHienthiMK_CheckedChanged(object sender, EventArgs e)
+        {
+            if(ckHienthiMK.Checked)
+            {
+                txtPass.UseSystemPasswordChar = true;
+            }
+            else
+            {
+                txtPass.UseSystemPasswordChar = false;
+            }
+        }
+
     }
 }

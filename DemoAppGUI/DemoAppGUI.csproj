@@ -52,6 +52,30 @@
     <Compile Include="fAdmin.Designer.cs">
       <DependentUpon>fAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="fDangky.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fDangky.Designer.cs">
+      <DependentUpon>fDangky.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fNhanVien.Designer.cs">
+      <DependentUpon>fNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fQuenMK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fQuenMK.Designer.cs">
+      <DependentUpon>fQuenMK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fThongTinCaNhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fThongTinCaNhan.Designer.cs">
+      <DependentUpon>fThongTinCaNhan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,8 +93,20 @@
     <EmbeddedResource Include="fAdmin.resx">
       <DependentUpon>fAdmin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="fDangky.resx">
+      <DependentUpon>fDangky.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fNhanVien.resx">
+      <DependentUpon>fNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fQuanLyBan.resx">
       <DependentUpon>fQuanLyBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fQuenMK.resx">
+      <DependentUpon>fQuenMK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fThongTinCaNhan.resx">
+      <DependentUpon>fThongTinCaNhan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -101,6 +137,10 @@
     <ProjectReference Include="..\DemoAppBUS\DemoAppBUS.csproj">
       <Project>{7861ab16-7822-4aab-a81b-60508c0fb424}</Project>
       <Name>DemoAppBUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DemoAppDAO\DemoAppDAO.csproj">
+      <Project>{282c4412-e986-4b31-a3d9-6c116da59a3e}</Project>
+      <Name>DemoAppDAO</Name>
     </ProjectReference>
     <ProjectReference Include="..\DemoAppDTO\DemoAppDTO.csproj">
       <Project>{cdd367fb-23b1-42cd-a25b-5114202a60ac}</Project>
