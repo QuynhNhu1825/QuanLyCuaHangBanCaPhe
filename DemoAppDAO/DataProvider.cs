@@ -20,7 +20,7 @@ namespace DemoAppDAO
         }
 
         private DataProvider() { }
-        public DataTable ExecuteQuery(string query, object[] panameter=null)
+        public DataTable ExecuteQuery(string query, object[] panameter=null)//tra dong kq 
         {
             DataTable data = new DataTable();
 
@@ -48,7 +48,7 @@ namespace DemoAppDAO
             return data;
 
         }
-        public int ExecuteNonQuery(string query, object[] panameter = null)
+        public int ExecuteNonQuery(string query, object[] panameter = null)//so dong thuc thi (insert/delete/update)
         {
             int data = 0;
 
@@ -75,7 +75,7 @@ namespace DemoAppDAO
             return data;
 
         }
-        public object ExecuteScalar(string query, object[] panameter = null)
+        public object ExecuteScalar(string query, object[] panameter = null)//tra 1 kq(count,sum,...)
         {
             object data = 0;
 

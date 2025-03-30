@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DemoAppDAO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -30,10 +31,29 @@ namespace DemoAppGUI
 
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
-            fQuanLyBan f=new fQuanLyBan();
-            this.Hide();
-            f.ShowDialog();
-            this.Show();
+            string tenTK = txtName.Text;
+            string matKhau = txtPass.Text;
+
+            if (Login(tenTK, matKhau))
+            {
+                fQuanLyBan f = new fQuanLyBan();
+                this.Hide();
+                f.ShowDialog();
+                this.Show();
+            }
+            else
+            {
+                MessageBox.Show("Sai tên TK hoặc MK!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        bool Login(string tenTK,string matKhau)
+        {
+            string query = "SELECT * FROM TaiKhoan WHERE TenTK = @tenTK AND MatKhau = @matKhau";
+
+            DataTable kq = DataProvider.Instance.ExecuteQuery(query, new object[] { tenTK, matKhau });
+
+            return kq.Rows.Count > 0;
         }
 
         private void ckHienthiMK_CheckedChanged(object sender, EventArgs e)
