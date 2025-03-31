@@ -37,5 +37,22 @@ namespace DemoAppGUI
             fAdmin f = new fAdmin();
             f.ShowDialog();
         }
+
+        private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void thôngTinCáNhânToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fThongTinCaNhan f = new fThongTinCaNhan();
+            f.ShowDialog();
+        }
+
+        private void nhânViênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fNhanVien f = new fNhanVien();
+            f.ShowDialog();
+        }
     }
 }

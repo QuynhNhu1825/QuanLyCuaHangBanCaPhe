@@ -7,29 +7,45 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DemoAppDAO;
 
 namespace DemoAppGUI
 {
     public partial class fAdmin: Form
     {
+
         public fAdmin()
         {
             InitializeComponent();
+            LoadDSTK();
+            LoadDSBan();
+            LoadDSThucUong();
+            LoadDSDMThucUong();
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        void LoadDSTK()
         {
+            string query = "SELECT * FROM TaiKhoan ";
 
+            dgvTK.DataSource = DataProvider.Instance.ExecuteQuery(query);
         }
-
-        private void lblID_Click(object sender, EventArgs e)
+        void LoadDSBan()
         {
+            string query = "SELECT * FROM Ban ";
 
+            dgvBan.DataSource = DataProvider.Instance.ExecuteQuery(query);
         }
-
-        private void button1_Click(object sender, EventArgs e)
+        void LoadDSThucUong()
         {
+            string query = "SELECT * FROM ThucUong ";
 
+            dgvThucuong.DataSource = DataProvider.Instance.ExecuteQuery(query);
+        }
+        void LoadDSDMThucUong()
+        {
+            string query = "SELECT * FROM DanhMucThucUong ";
+
+            dgvDanhmuc.DataSource = DataProvider.Instance.ExecuteQuery(query);
         }
     }
 }
