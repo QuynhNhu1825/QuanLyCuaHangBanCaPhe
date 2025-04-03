@@ -28,9 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fThongTinCaNhan));
             this.panel10 = new System.Windows.Forms.Panel();
+            this.txtMKmoi = new System.Windows.Forms.TextBox();
             this.lblMKmoi = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.txtMK = new System.Windows.Forms.TextBox();
             this.lblMatkhau = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.txtTenHT = new System.Windows.Forms.TextBox();
@@ -39,27 +43,37 @@
             this.txtTenDN = new System.Windows.Forms.TextBox();
             this.lblTenDN = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblNhaplaimk = new System.Windows.Forms.Label();
-            this.btnCapnhat = new System.Windows.Forms.Button();
-            this.btnThoat = new System.Windows.Forms.Button();
-            this.txtMK = new System.Windows.Forms.TextBox();
-            this.txtMKmoi = new System.Windows.Forms.TextBox();
             this.txtNhaplaimk = new System.Windows.Forms.TextBox();
+            this.lblNhaplaimk = new System.Windows.Forms.Label();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnThoat = new System.Windows.Forms.Button();
+            this.btnCapnhat = new System.Windows.Forms.Button();
             this.panel10.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel10
             // 
             this.panel10.Controls.Add(this.txtMKmoi);
             this.panel10.Controls.Add(this.lblMKmoi);
-            this.panel10.Location = new System.Drawing.Point(19, 275);
+            this.panel10.Location = new System.Drawing.Point(13, 340);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(514, 77);
             this.panel10.TabIndex = 6;
+            // 
+            // txtMKmoi
+            // 
+            this.txtMKmoi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.txtMKmoi.Location = new System.Drawing.Point(204, 26);
+            this.txtMKmoi.Multiline = true;
+            this.txtMKmoi.Name = "txtMKmoi";
+            this.txtMKmoi.Size = new System.Drawing.Size(293, 29);
+            this.txtMKmoi.TabIndex = 3;
             // 
             // lblMKmoi
             // 
@@ -75,10 +89,19 @@
             // 
             this.panel9.Controls.Add(this.txtMK);
             this.panel9.Controls.Add(this.lblMatkhau);
-            this.panel9.Location = new System.Drawing.Point(19, 192);
+            this.panel9.Location = new System.Drawing.Point(12, 257);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(514, 77);
             this.panel9.TabIndex = 7;
+            // 
+            // txtMK
+            // 
+            this.txtMK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.txtMK.Location = new System.Drawing.Point(204, 28);
+            this.txtMK.Multiline = true;
+            this.txtMK.Name = "txtMK";
+            this.txtMK.Size = new System.Drawing.Size(293, 29);
+            this.txtMK.TabIndex = 3;
             // 
             // lblMatkhau
             // 
@@ -94,13 +117,14 @@
             // 
             this.panel8.Controls.Add(this.txtTenHT);
             this.panel8.Controls.Add(this.lblTenhienthi);
-            this.panel8.Location = new System.Drawing.Point(19, 109);
+            this.panel8.Location = new System.Drawing.Point(12, 174);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(514, 77);
             this.panel8.TabIndex = 8;
             // 
             // txtTenHT
             // 
+            this.txtTenHT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txtTenHT.Location = new System.Drawing.Point(204, 24);
             this.txtTenHT.Multiline = true;
             this.txtTenHT.Name = "txtTenHT";
@@ -121,13 +145,14 @@
             // 
             this.panel7.Controls.Add(this.txtTenDN);
             this.panel7.Controls.Add(this.lblTenDN);
-            this.panel7.Location = new System.Drawing.Point(19, 26);
+            this.panel7.Location = new System.Drawing.Point(12, 91);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(515, 77);
             this.panel7.TabIndex = 5;
             // 
             // txtTenDN
             // 
+            this.txtTenDN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txtTenDN.Location = new System.Drawing.Point(204, 24);
             this.txtTenDN.Multiline = true;
             this.txtTenDN.Name = "txtTenDN";
@@ -149,10 +174,19 @@
             // 
             this.panel1.Controls.Add(this.txtNhaplaimk);
             this.panel1.Controls.Add(this.lblNhaplaimk);
-            this.panel1.Location = new System.Drawing.Point(19, 358);
+            this.panel1.Location = new System.Drawing.Point(12, 423);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(514, 77);
             this.panel1.TabIndex = 7;
+            // 
+            // txtNhaplaimk
+            // 
+            this.txtNhaplaimk.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.txtNhaplaimk.Location = new System.Drawing.Point(204, 26);
+            this.txtNhaplaimk.Multiline = true;
+            this.txtNhaplaimk.Name = "txtNhaplaimk";
+            this.txtNhaplaimk.Size = new System.Drawing.Size(293, 29);
+            this.txtNhaplaimk.TabIndex = 3;
             // 
             // lblNhaplaimk
             // 
@@ -164,54 +198,54 @@
             this.lblNhaplaimk.TabIndex = 2;
             this.lblNhaplaimk.Text = "Nhập lại mk:";
             // 
-            // btnCapnhat
+            // imageList1
             // 
-            this.btnCapnhat.Location = new System.Drawing.Point(277, 452);
-            this.btnCapnhat.Name = "btnCapnhat";
-            this.btnCapnhat.Size = new System.Drawing.Size(108, 51);
-            this.btnCapnhat.TabIndex = 9;
-            this.btnCapnhat.Text = "Cập nhật";
-            this.btnCapnhat.UseVisualStyleBackColor = true;
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "3841792_interface_multimedia_off_on_power_icon.png");
+            this.imageList1.Images.SetKeyName(1, "3669185_update_ic_icon.png");
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::DemoAppGUI.Properties.Resources._8673524_ic_fluent_person_note_filled_icon;
+            this.pictureBox1.Location = new System.Drawing.Point(20, 13);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(65, 72);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
             // 
             // btnThoat
             // 
-            this.btnThoat.Location = new System.Drawing.Point(408, 452);
+            this.btnThoat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnThoat.ImageKey = "3841792_interface_multimedia_off_on_power_icon.png";
+            this.btnThoat.ImageList = this.imageList1;
+            this.btnThoat.Location = new System.Drawing.Point(411, 506);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(108, 51);
+            this.btnThoat.Size = new System.Drawing.Size(73, 61);
             this.btnThoat.TabIndex = 9;
-            this.btnThoat.Text = "Thoát";
-            this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.UseVisualStyleBackColor = false;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
-            // txtMK
+            // btnCapnhat
             // 
-            this.txtMK.Location = new System.Drawing.Point(204, 28);
-            this.txtMK.Multiline = true;
-            this.txtMK.Name = "txtMK";
-            this.txtMK.Size = new System.Drawing.Size(293, 29);
-            this.txtMK.TabIndex = 3;
-            // 
-            // txtMKmoi
-            // 
-            this.txtMKmoi.Location = new System.Drawing.Point(204, 26);
-            this.txtMKmoi.Multiline = true;
-            this.txtMKmoi.Name = "txtMKmoi";
-            this.txtMKmoi.Size = new System.Drawing.Size(293, 29);
-            this.txtMKmoi.TabIndex = 3;
-            // 
-            // txtNhaplaimk
-            // 
-            this.txtNhaplaimk.Location = new System.Drawing.Point(204, 26);
-            this.txtNhaplaimk.Multiline = true;
-            this.txtNhaplaimk.Name = "txtNhaplaimk";
-            this.txtNhaplaimk.Size = new System.Drawing.Size(293, 29);
-            this.txtNhaplaimk.TabIndex = 3;
+            this.btnCapnhat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnCapnhat.ImageKey = "3669185_update_ic_icon.png";
+            this.btnCapnhat.ImageList = this.imageList1;
+            this.btnCapnhat.Location = new System.Drawing.Point(318, 506);
+            this.btnCapnhat.Name = "btnCapnhat";
+            this.btnCapnhat.Size = new System.Drawing.Size(67, 61);
+            this.btnCapnhat.TabIndex = 9;
+            this.btnCapnhat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCapnhat.UseVisualStyleBackColor = false;
             // 
             // fThongTinCaNhan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(545, 525);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.ClientSize = new System.Drawing.Size(545, 579);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnCapnhat);
             this.Controls.Add(this.panel1);
@@ -231,6 +265,7 @@
             this.panel7.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -254,5 +289,7 @@
         private System.Windows.Forms.Label lblNhaplaimk;
         private System.Windows.Forms.Button btnCapnhat;
         private System.Windows.Forms.Button btnThoat;
+        private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

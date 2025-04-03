@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fNhanVien));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnThoat = new System.Windows.Forms.Button();
             this.btnLammoi = new System.Windows.Forms.Button();
@@ -53,6 +55,7 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.txtIDKH = new System.Windows.Forms.TextBox();
             this.dgvKhKH = new System.Windows.Forms.Label();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKh)).BeginInit();
@@ -67,6 +70,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.panel1.Controls.Add(this.btnThoat);
             this.panel1.Controls.Add(this.btnLammoi);
             this.panel1.Controls.Add(this.btnThemKH);
@@ -77,30 +81,36 @@
             // 
             // btnThoat
             // 
-            this.btnThoat.Location = new System.Drawing.Point(367, 19);
+            this.btnThoat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnThoat.ImageKey = "3841792_interface_multimedia_off_on_power_icon.png";
+            this.btnThoat.ImageList = this.imageList1;
+            this.btnThoat.Location = new System.Drawing.Point(428, 19);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(113, 60);
+            this.btnThoat.Size = new System.Drawing.Size(70, 60);
             this.btnThoat.TabIndex = 1;
-            this.btnThoat.Text = "Thoát";
-            this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.UseVisualStyleBackColor = false;
             // 
             // btnLammoi
             // 
-            this.btnLammoi.Location = new System.Drawing.Point(190, 19);
+            this.btnLammoi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnLammoi.ImageKey = "2571204_refresh_reload_update_recycle_sync_icon.png";
+            this.btnLammoi.ImageList = this.imageList1;
+            this.btnLammoi.Location = new System.Drawing.Point(220, 17);
             this.btnLammoi.Name = "btnLammoi";
-            this.btnLammoi.Size = new System.Drawing.Size(113, 60);
+            this.btnLammoi.Size = new System.Drawing.Size(86, 60);
             this.btnLammoi.TabIndex = 1;
-            this.btnLammoi.Text = "Làm mới";
-            this.btnLammoi.UseVisualStyleBackColor = true;
+            this.btnLammoi.UseVisualStyleBackColor = false;
             // 
             // btnThemKH
             // 
+            this.btnThemKH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnThemKH.ImageKey = "330410_add_plus_icon.png";
+            this.btnThemKH.ImageList = this.imageList1;
             this.btnThemKH.Location = new System.Drawing.Point(22, 19);
             this.btnThemKH.Name = "btnThemKH";
-            this.btnThemKH.Size = new System.Drawing.Size(113, 60);
+            this.btnThemKH.Size = new System.Drawing.Size(72, 60);
             this.btnThemKH.TabIndex = 1;
-            this.btnThemKH.Text = "Thêm";
-            this.btnThemKH.UseVisualStyleBackColor = true;
+            this.btnThemKH.UseVisualStyleBackColor = false;
             // 
             // panel2
             // 
@@ -112,6 +122,7 @@
             // 
             // dgvKh
             // 
+            this.dgvKh.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.dgvKh.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvKh.Location = new System.Drawing.Point(3, 3);
             this.dgvKh.Name = "dgvKh";
@@ -122,6 +133,7 @@
             // 
             // panel3
             // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.panel3.Controls.Add(this.txtTimKH);
             this.panel3.Controls.Add(this.btnTimKH);
             this.panel3.Location = new System.Drawing.Point(559, 12);
@@ -131,6 +143,7 @@
             // 
             // txtTimKH
             // 
+            this.txtTimKH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.txtTimKH.Location = new System.Drawing.Point(28, 17);
             this.txtTimKH.Multiline = true;
             this.txtTimKH.Name = "txtTimKH";
@@ -139,15 +152,17 @@
             // 
             // btnTimKH
             // 
+            this.btnTimKH.ImageKey = "download (5).png";
+            this.btnTimKH.ImageList = this.imageList1;
             this.btnTimKH.Location = new System.Drawing.Point(317, 17);
             this.btnTimKH.Name = "btnTimKH";
-            this.btnTimKH.Size = new System.Drawing.Size(113, 60);
+            this.btnTimKH.Size = new System.Drawing.Size(89, 60);
             this.btnTimKH.TabIndex = 2;
-            this.btnTimKH.Text = "Tìm kiếm";
             this.btnTimKH.UseVisualStyleBackColor = true;
             // 
             // panel4
             // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.panel4.Controls.Add(this.panel9);
             this.panel4.Controls.Add(this.panel8);
             this.panel4.Controls.Add(this.panel6);
@@ -169,6 +184,7 @@
             // 
             // txtNgaytao
             // 
+            this.txtNgaytao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.txtNgaytao.Location = new System.Drawing.Point(158, 20);
             this.txtNgaytao.Multiline = true;
             this.txtNgaytao.Name = "txtNgaytao";
@@ -184,7 +200,6 @@
             this.lblNgaytao.Size = new System.Drawing.Size(123, 29);
             this.lblNgaytao.TabIndex = 2;
             this.lblNgaytao.Text = "Ngày tạo:";
-            //this.lblNgaytao.Click += new System.EventHandler(this.lblID_Click);
             // 
             // panel8
             // 
@@ -197,6 +212,7 @@
             // 
             // txtSDT
             // 
+            this.txtSDT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.txtSDT.Location = new System.Drawing.Point(158, 24);
             this.txtSDT.Multiline = true;
             this.txtSDT.Name = "txtSDT";
@@ -212,7 +228,6 @@
             this.lblSDT.Size = new System.Drawing.Size(72, 29);
             this.lblSDT.TabIndex = 2;
             this.lblSDT.Text = "SDT:";
-            //this.lblSDT.Click += new System.EventHandler(this.lblID_Click);
             // 
             // panel6
             // 
@@ -225,6 +240,7 @@
             // 
             // txtDiachi
             // 
+            this.txtDiachi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.txtDiachi.Location = new System.Drawing.Point(158, 20);
             this.txtDiachi.Multiline = true;
             this.txtDiachi.Name = "txtDiachi";
@@ -240,7 +256,6 @@
             this.lblDiachi.Size = new System.Drawing.Size(100, 29);
             this.lblDiachi.TabIndex = 2;
             this.lblDiachi.Text = "Địa chỉ:";
-            //this.lblDiachi.Click += new System.EventHandler(this.lblID_Click);
             // 
             // panel5
             // 
@@ -253,6 +268,7 @@
             // 
             // txtTenKH
             // 
+            this.txtTenKH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.txtTenKH.Location = new System.Drawing.Point(158, 20);
             this.txtTenKH.Multiline = true;
             this.txtTenKH.Name = "txtTenKH";
@@ -268,7 +284,6 @@
             this.lblTenKH.Size = new System.Drawing.Size(108, 29);
             this.lblTenKH.TabIndex = 2;
             this.lblTenKH.Text = "Tên KH:";
-            //this.lblTenKH.Click += new System.EventHandler(this.lblID_Click);
             // 
             // panel7
             // 
@@ -281,6 +296,7 @@
             // 
             // txtIDKH
             // 
+            this.txtIDKH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.txtIDKH.Location = new System.Drawing.Point(158, 20);
             this.txtIDKH.Multiline = true;
             this.txtIDKH.Name = "txtIDKH";
@@ -297,7 +313,15 @@
             this.dgvKhKH.Size = new System.Drawing.Size(45, 29);
             this.dgvKhKH.TabIndex = 2;
             this.dgvKhKH.Text = "ID:";
-            //this.dgvKhKH.Click += new System.EventHandler(this.lblID_Click);
+            // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "330410_add_plus_icon.png");
+            this.imageList1.Images.SetKeyName(1, "3841792_interface_multimedia_off_on_power_icon.png");
+            this.imageList1.Images.SetKeyName(2, "2571204_refresh_reload_update_recycle_sync_icon.png");
+            this.imageList1.Images.SetKeyName(3, "download (5).png");
             // 
             // fNhanVien
             // 
@@ -358,5 +382,6 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.TextBox txtTenKH;
         private System.Windows.Forms.Label lblTenKH;
+        private System.Windows.Forms.ImageList imageList1;
     }
 }

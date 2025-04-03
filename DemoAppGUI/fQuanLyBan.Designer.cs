@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fQuanLyBan));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.adinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thôngTinTàiKhoảnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -36,6 +38,7 @@
             this.nhânViênToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnA12 = new System.Windows.Forms.Button();
+            this.imgBan = new System.Windows.Forms.ImageList(this.components);
             this.btnA11 = new System.Windows.Forms.Button();
             this.btnA10 = new System.Windows.Forms.Button();
             this.btnA9 = new System.Windows.Forms.Button();
@@ -103,14 +106,14 @@
             // thôngTinCáNhânToolStripMenuItem
             // 
             this.thôngTinCáNhânToolStripMenuItem.Name = "thôngTinCáNhânToolStripMenuItem";
-            this.thôngTinCáNhânToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.thôngTinCáNhânToolStripMenuItem.Size = new System.Drawing.Size(256, 34);
             this.thôngTinCáNhânToolStripMenuItem.Text = "Thông tin cá nhân";
             this.thôngTinCáNhânToolStripMenuItem.Click += new System.EventHandler(this.thôngTinCáNhânToolStripMenuItem_Click);
             // 
             // đăngXuấtToolStripMenuItem
             // 
             this.đăngXuấtToolStripMenuItem.Name = "đăngXuấtToolStripMenuItem";
-            this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(256, 34);
             this.đăngXuấtToolStripMenuItem.Text = "Đăng xuất";
             this.đăngXuấtToolStripMenuItem.Click += new System.EventHandler(this.đăngXuấtToolStripMenuItem_Click);
             // 
@@ -123,6 +126,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.panel1.Controls.Add(this.btnA12);
             this.panel1.Controls.Add(this.btnA11);
             this.panel1.Controls.Add(this.btnA10);
@@ -135,7 +139,7 @@
             this.panel1.Controls.Add(this.btnA3);
             this.panel1.Controls.Add(this.btnA2);
             this.panel1.Controls.Add(this.btnA1);
-            this.panel1.Location = new System.Drawing.Point(13, 37);
+            this.panel1.Location = new System.Drawing.Point(13, 41);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(716, 676);
             this.panel1.TabIndex = 1;
@@ -145,23 +149,37 @@
             this.btnA12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnA12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnA12.ForeColor = System.Drawing.Color.Blue;
+            this.btnA12.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnA12.ImageKey = "download (8).png";
+            this.btnA12.ImageList = this.imgBan;
             this.btnA12.Location = new System.Drawing.Point(515, 542);
             this.btnA12.Name = "btnA12";
-            this.btnA12.Size = new System.Drawing.Size(122, 76);
+            this.btnA12.Size = new System.Drawing.Size(103, 76);
             this.btnA12.TabIndex = 11;
-            this.btnA12.Text = "Bàn A12";
+            this.btnA12.Text = " A12";
+            this.btnA12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnA12.UseVisualStyleBackColor = false;
+            // 
+            // imgBan
+            // 
+            this.imgBan.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imgBan.ImageStream")));
+            this.imgBan.TransparentColor = System.Drawing.Color.Transparent;
+            this.imgBan.Images.SetKeyName(0, "download (8).png");
             // 
             // btnA11
             // 
             this.btnA11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnA11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnA11.ForeColor = System.Drawing.Color.Blue;
+            this.btnA11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnA11.ImageKey = "download (8).png";
+            this.btnA11.ImageList = this.imgBan;
             this.btnA11.Location = new System.Drawing.Point(279, 542);
             this.btnA11.Name = "btnA11";
-            this.btnA11.Size = new System.Drawing.Size(122, 76);
+            this.btnA11.Size = new System.Drawing.Size(103, 76);
             this.btnA11.TabIndex = 10;
-            this.btnA11.Text = "Bàn A11";
+            this.btnA11.Text = " A11";
+            this.btnA11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnA11.UseVisualStyleBackColor = false;
             // 
             // btnA10
@@ -169,11 +187,15 @@
             this.btnA10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnA10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnA10.ForeColor = System.Drawing.Color.Blue;
-            this.btnA10.Location = new System.Drawing.Point(30, 542);
+            this.btnA10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnA10.ImageKey = "download (8).png";
+            this.btnA10.ImageList = this.imgBan;
+            this.btnA10.Location = new System.Drawing.Point(50, 542);
             this.btnA10.Name = "btnA10";
-            this.btnA10.Size = new System.Drawing.Size(122, 76);
+            this.btnA10.Size = new System.Drawing.Size(106, 76);
             this.btnA10.TabIndex = 9;
-            this.btnA10.Text = "Bàn A10";
+            this.btnA10.Text = " A10";
+            this.btnA10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnA10.UseVisualStyleBackColor = false;
             // 
             // btnA9
@@ -181,11 +203,15 @@
             this.btnA9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnA9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnA9.ForeColor = System.Drawing.Color.Blue;
+            this.btnA9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnA9.ImageKey = "download (8).png";
+            this.btnA9.ImageList = this.imgBan;
             this.btnA9.Location = new System.Drawing.Point(515, 377);
             this.btnA9.Name = "btnA9";
-            this.btnA9.Size = new System.Drawing.Size(122, 76);
+            this.btnA9.Size = new System.Drawing.Size(103, 76);
             this.btnA9.TabIndex = 8;
-            this.btnA9.Text = "Bàn A9";
+            this.btnA9.Text = " A9";
+            this.btnA9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnA9.UseVisualStyleBackColor = false;
             // 
             // btnA8
@@ -193,11 +219,15 @@
             this.btnA8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnA8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnA8.ForeColor = System.Drawing.Color.Blue;
+            this.btnA8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnA8.ImageKey = "download (8).png";
+            this.btnA8.ImageList = this.imgBan;
             this.btnA8.Location = new System.Drawing.Point(279, 377);
             this.btnA8.Name = "btnA8";
-            this.btnA8.Size = new System.Drawing.Size(122, 76);
+            this.btnA8.Size = new System.Drawing.Size(103, 76);
             this.btnA8.TabIndex = 7;
-            this.btnA8.Text = "Bàn A8";
+            this.btnA8.Text = " A8";
+            this.btnA8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnA8.UseVisualStyleBackColor = false;
             // 
             // btnA7
@@ -205,11 +235,15 @@
             this.btnA7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnA7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnA7.ForeColor = System.Drawing.Color.Blue;
-            this.btnA7.Location = new System.Drawing.Point(30, 377);
+            this.btnA7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnA7.ImageKey = "download (8).png";
+            this.btnA7.ImageList = this.imgBan;
+            this.btnA7.Location = new System.Drawing.Point(50, 377);
             this.btnA7.Name = "btnA7";
-            this.btnA7.Size = new System.Drawing.Size(122, 76);
+            this.btnA7.Size = new System.Drawing.Size(106, 76);
             this.btnA7.TabIndex = 6;
-            this.btnA7.Text = "Bàn A7";
+            this.btnA7.Text = " A7";
+            this.btnA7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnA7.UseVisualStyleBackColor = false;
             // 
             // btnA6
@@ -217,11 +251,15 @@
             this.btnA6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnA6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnA6.ForeColor = System.Drawing.Color.Blue;
+            this.btnA6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnA6.ImageKey = "download (8).png";
+            this.btnA6.ImageList = this.imgBan;
             this.btnA6.Location = new System.Drawing.Point(515, 206);
             this.btnA6.Name = "btnA6";
-            this.btnA6.Size = new System.Drawing.Size(122, 76);
+            this.btnA6.Size = new System.Drawing.Size(103, 76);
             this.btnA6.TabIndex = 5;
-            this.btnA6.Text = "Bàn A6";
+            this.btnA6.Text = "A6";
+            this.btnA6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnA6.UseVisualStyleBackColor = false;
             // 
             // btnA5
@@ -229,11 +267,15 @@
             this.btnA5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnA5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnA5.ForeColor = System.Drawing.Color.Blue;
+            this.btnA5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnA5.ImageKey = "download (8).png";
+            this.btnA5.ImageList = this.imgBan;
             this.btnA5.Location = new System.Drawing.Point(279, 206);
             this.btnA5.Name = "btnA5";
-            this.btnA5.Size = new System.Drawing.Size(122, 76);
+            this.btnA5.Size = new System.Drawing.Size(103, 76);
             this.btnA5.TabIndex = 4;
-            this.btnA5.Text = "Bàn A5";
+            this.btnA5.Text = " A5";
+            this.btnA5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnA5.UseVisualStyleBackColor = false;
             // 
             // btnA4
@@ -241,12 +283,16 @@
             this.btnA4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnA4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnA4.ForeColor = System.Drawing.Color.Blue;
-            this.btnA4.Location = new System.Drawing.Point(30, 206);
+            this.btnA4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnA4.ImageKey = "download (8).png";
+            this.btnA4.ImageList = this.imgBan;
+            this.btnA4.Location = new System.Drawing.Point(50, 206);
             this.btnA4.Name = "btnA4";
             this.btnA4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnA4.Size = new System.Drawing.Size(122, 76);
+            this.btnA4.Size = new System.Drawing.Size(106, 76);
             this.btnA4.TabIndex = 3;
-            this.btnA4.Text = "Bàn A4";
+            this.btnA4.Text = "A4";
+            this.btnA4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnA4.UseVisualStyleBackColor = false;
             // 
             // btnA3
@@ -254,11 +300,15 @@
             this.btnA3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnA3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnA3.ForeColor = System.Drawing.Color.Blue;
+            this.btnA3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnA3.ImageKey = "download (8).png";
+            this.btnA3.ImageList = this.imgBan;
             this.btnA3.Location = new System.Drawing.Point(515, 50);
             this.btnA3.Name = "btnA3";
-            this.btnA3.Size = new System.Drawing.Size(122, 76);
+            this.btnA3.Size = new System.Drawing.Size(103, 76);
             this.btnA3.TabIndex = 2;
-            this.btnA3.Text = "Bàn A3";
+            this.btnA3.Text = " A3";
+            this.btnA3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnA3.UseVisualStyleBackColor = false;
             // 
             // btnA2
@@ -266,11 +316,15 @@
             this.btnA2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnA2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnA2.ForeColor = System.Drawing.Color.Blue;
+            this.btnA2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnA2.ImageKey = "download (8).png";
+            this.btnA2.ImageList = this.imgBan;
             this.btnA2.Location = new System.Drawing.Point(279, 50);
             this.btnA2.Name = "btnA2";
-            this.btnA2.Size = new System.Drawing.Size(122, 76);
+            this.btnA2.Size = new System.Drawing.Size(103, 76);
             this.btnA2.TabIndex = 1;
-            this.btnA2.Text = "Bàn A2";
+            this.btnA2.Text = " A2";
+            this.btnA2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnA2.UseVisualStyleBackColor = false;
             // 
             // btnA1
@@ -278,11 +332,15 @@
             this.btnA1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnA1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnA1.ForeColor = System.Drawing.Color.Blue;
-            this.btnA1.Location = new System.Drawing.Point(30, 50);
+            this.btnA1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnA1.ImageKey = "download (8).png";
+            this.btnA1.ImageList = this.imgBan;
+            this.btnA1.Location = new System.Drawing.Point(50, 50);
             this.btnA1.Name = "btnA1";
-            this.btnA1.Size = new System.Drawing.Size(122, 76);
+            this.btnA1.Size = new System.Drawing.Size(106, 76);
             this.btnA1.TabIndex = 0;
-            this.btnA1.Text = "Bàn A1";
+            this.btnA1.Text = " A1";
+            this.btnA1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnA1.UseVisualStyleBackColor = false;
             // 
             // panel2
@@ -305,6 +363,7 @@
             // 
             // panel3
             // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.panel3.Controls.Add(this.cbbChuyenBan);
             this.panel3.Controls.Add(this.nmrGiamGia);
             this.panel3.Controls.Add(this.btnChuyenBan);
@@ -367,6 +426,7 @@
             // 
             // panel4
             // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.panel4.Controls.Add(this.numericUpDown1);
             this.panel4.Controls.Add(this.btnThemMon);
             this.panel4.Controls.Add(this.cbb2);
@@ -473,5 +533,6 @@
         private System.Windows.Forms.Button btnA3;
         private System.Windows.Forms.Button btnA2;
         private System.Windows.Forms.ToolStripMenuItem nhânViênToolStripMenuItem;
+        private System.Windows.Forms.ImageList imgBan;
     }
 }

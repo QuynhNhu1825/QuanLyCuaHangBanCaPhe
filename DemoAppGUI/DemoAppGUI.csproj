@@ -119,6 +119,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -146,6 +147,51 @@
       <Project>{cdd367fb-23b1-42cd-a25b-5114202a60ac}</Project>
       <Name>DemoAppDTO</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %2810%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z6423047769427_98572fec2ce9451c90f45755a6fedb62.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %2811%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-pastel-background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hehe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hihi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\huhu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z6423047769427_98572fec2ce9451c90f45755a6fedb621.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z6423047769427_98572fec2ce9451c90f45755a6fedb622.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %289%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z6423047769427_98572fec2ce9451c90f45755a6fedb623.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %2812%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %2813%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8673524_ic_fluent_person_note_filled_icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

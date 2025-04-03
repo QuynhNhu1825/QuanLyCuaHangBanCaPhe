@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnLaylaimk = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lblKetqua = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtEmailDK = new System.Windows.Forms.TextBox();
             this.lblEmailDK = new System.Windows.Forms.Label();
-            this.btnLaylaimk = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -49,6 +49,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(636, 292);
             this.panel1.TabIndex = 0;
+            // 
+            // btnLaylaimk
+            // 
+            this.btnLaylaimk.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnLaylaimk.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLaylaimk.Location = new System.Drawing.Point(167, 214);
+            this.btnLaylaimk.Name = "btnLaylaimk";
+            this.btnLaylaimk.Size = new System.Drawing.Size(266, 40);
+            this.btnLaylaimk.TabIndex = 6;
+            this.btnLaylaimk.Text = "Lấy lại mật khẩu";
+            this.btnLaylaimk.UseVisualStyleBackColor = false;
             // 
             // panel3
             // 
@@ -80,6 +91,7 @@
             // 
             // txtEmailDK
             // 
+            this.txtEmailDK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.txtEmailDK.Location = new System.Drawing.Point(198, 16);
             this.txtEmailDK.Multiline = true;
             this.txtEmailDK.Name = "txtEmailDK";
@@ -98,20 +110,11 @@
             this.lblEmailDK.TabIndex = 0;
             this.lblEmailDK.Text = "Email đã DK:";
             // 
-            // btnLaylaimk
-            // 
-            this.btnLaylaimk.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLaylaimk.Location = new System.Drawing.Point(167, 214);
-            this.btnLaylaimk.Name = "btnLaylaimk";
-            this.btnLaylaimk.Size = new System.Drawing.Size(266, 40);
-            this.btnLaylaimk.TabIndex = 6;
-            this.btnLaylaimk.Text = "Lấy lại mật khẩu";
-            this.btnLaylaimk.UseVisualStyleBackColor = true;
-            // 
             // fQuenMK
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(669, 336);
             this.Controls.Add(this.panel1);
             this.Name = "fQuenMK";

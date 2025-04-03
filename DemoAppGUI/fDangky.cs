@@ -21,5 +21,10 @@ namespace DemoAppGUI
         {
 
         }
+
+        private void ckHTMK_CheckedChanged(object sender, EventArgs e)
+        {
+            txtMatkhau.UseSystemPasswordChar = false;
+        }
     }
 }
