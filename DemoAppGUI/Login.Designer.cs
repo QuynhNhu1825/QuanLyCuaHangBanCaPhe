@@ -36,15 +36,15 @@
             this.ckHienthiMK = new System.Windows.Forms.CheckBox();
             this.lblPass = new System.Windows.Forms.Label();
             this.txtPass = new System.Windows.Forms.TextBox();
-            this.lblName = new System.Windows.Forms.Label();
-            this.txtName = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.lblName = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -59,7 +59,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(680, 307);
             this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // pictureBox2
             // 
@@ -70,7 +69,6 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // btnThoat
             // 
@@ -103,7 +101,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(612, 88);
             this.panel3.TabIndex = 3;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // ckHienthiMK
             // 
@@ -126,7 +123,6 @@
             this.lblPass.Size = new System.Drawing.Size(116, 26);
             this.lblPass.TabIndex = 0;
             this.lblPass.Text = "Mật khẩu:";
-            this.lblPass.Click += new System.EventHandler(this.lblPass_Click);
             // 
             // txtPass
             // 
@@ -134,10 +130,40 @@
             this.txtPass.Multiline = true;
             this.txtPass.Name = "txtPass";
             this.txtPass.PasswordChar = '*';
+            this.txtPass.ShortcutsEnabled = false;
             this.txtPass.Size = new System.Drawing.Size(265, 38);
             this.txtPass.TabIndex = 2;
             this.txtPass.UseSystemPasswordChar = true;
             this.txtPass.TextChanged += new System.EventHandler(this.txtPass_TextChanged);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Controls.Add(this.txtName);
+            this.panel2.Controls.Add(this.lblName);
+            this.panel2.Location = new System.Drawing.Point(17, 19);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(612, 83);
+            this.panel2.TabIndex = 2;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::DemoAppGUI.Properties.Resources.download__10_;
+            this.pictureBox1.Location = new System.Drawing.Point(491, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 77);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+            // txtName
+            // 
+            this.txtName.Location = new System.Drawing.Point(202, 16);
+            this.txtName.Multiline = true;
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(266, 38);
+            this.txtName.TabIndex = 1;
+            this.txtName.UseSystemPasswordChar = true;
             // 
             // lblName
             // 
@@ -149,39 +175,6 @@
             this.lblName.Size = new System.Drawing.Size(183, 26);
             this.lblName.TabIndex = 0;
             this.lblName.Text = "Tên đăng nhập: ";
-            this.lblName.Click += new System.EventHandler(this.lblName_Click);
-            // 
-            // txtName
-            // 
-            this.txtName.Location = new System.Drawing.Point(202, 16);
-            this.txtName.Multiline = true;
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(266, 38);
-            this.txtName.TabIndex = 1;
-            this.txtName.UseSystemPasswordChar = true;
-            this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::DemoAppGUI.Properties.Resources.download__10_;
-            this.pictureBox1.Location = new System.Drawing.Point(491, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 77);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Controls.Add(this.txtName);
-            this.panel2.Controls.Add(this.lblName);
-            this.panel2.Location = new System.Drawing.Point(17, 19);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(612, 83);
-            this.panel2.TabIndex = 2;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // frmLogin
             // 
@@ -196,13 +189,14 @@
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng nhập";
+            this.Load += new System.EventHandler(this.frmLogin_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

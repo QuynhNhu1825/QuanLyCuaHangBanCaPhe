@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DemoAppDTO;
+using DemoAppDAO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,22 +17,39 @@ namespace DemoAppGUI
         public fQuanLyBan()
         {
             InitializeComponent();
-        }
 
-        private void thôngTinTàiKhoảnToolStripMenuItem_Click(object sender, EventArgs e)
+            LoadBan();
+        }
+        #region Method
+
+        void LoadBan()
         {
+            List<BanDTO> dsBan = BanDAO.Instance.LoadDSBan();
+
+            foreach (BanDTO item in dsBan)
+            {
+                Button btn = new Button() { Width = BanDAO.width, Height = BanDAO.height };
+                btn.Text = item.Name + Environment.NewLine + item.Status;
+
+                switch (item.Status)
+                {
+                    case "Trống":
+                        btn.BackColor = Color.LightBlue;
+                        break;
+                    default:
+                        btn.BackColor = Color.LightPink;
+                        break;
+                }
+                btn.Click += (sender, e) =>
+                {
+                    MessageBox.Show($"Bạn đã chọn bàn: {item.Name}", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                };
+
+                flowLayoutPanel1.Controls.Add(btn);
+            }
 
         }
-
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
+        #endregion
 
         private void adinToolStripMenuItem_Click(object sender, EventArgs e)
         {

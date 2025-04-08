@@ -57,59 +57,26 @@ namespace DemoAppGUI
             return kq.Rows.Count > 0;
         }
 
+        
+
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+            //txtPass.PasswordChar = '*';
+        }
+
         private void ckHienthiMK_CheckedChanged(object sender, EventArgs e)
         {
-            if(ckHienthiMK.Checked)
-            {
-                txtPass.UseSystemPasswordChar = true;
-            }
-            else
+            if (ckHienthiMK.Checked)
             {
                 txtPass.UseSystemPasswordChar = false;
             }
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void lblPass_Click(object sender, EventArgs e)
-        {
-
+            else
+            {
+                txtPass.UseSystemPasswordChar = true;
+            }
         }
 
         private void txtPass_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtName_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblName_Click(object sender, EventArgs e)
         {
 
         }
