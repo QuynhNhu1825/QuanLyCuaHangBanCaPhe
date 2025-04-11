@@ -127,11 +127,9 @@
             // txtPass
             // 
             this.txtPass.Location = new System.Drawing.Point(203, 16);
-            this.txtPass.Multiline = true;
             this.txtPass.Name = "txtPass";
-            this.txtPass.PasswordChar = '*';
             this.txtPass.ShortcutsEnabled = false;
-            this.txtPass.Size = new System.Drawing.Size(265, 38);
+            this.txtPass.Size = new System.Drawing.Size(265, 26);
             this.txtPass.TabIndex = 2;
             this.txtPass.UseSystemPasswordChar = true;
             this.txtPass.TextChanged += new System.EventHandler(this.txtPass_TextChanged);

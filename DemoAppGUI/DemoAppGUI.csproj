@@ -193,5 +193,8 @@
   <ItemGroup>
     <None Include="Resources\8673524_ic_fluent_person_note_filled_icon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %289%291.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

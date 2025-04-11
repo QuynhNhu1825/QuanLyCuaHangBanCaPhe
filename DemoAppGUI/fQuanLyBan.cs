@@ -54,7 +54,9 @@ namespace DemoAppGUI
         private void adinToolStripMenuItem_Click(object sender, EventArgs e)
         {
             fAdmin f = new fAdmin();
+            this.Hide();
             f.ShowDialog();
+            this.Show();
         }
 
         private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)

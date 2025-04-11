@@ -16,7 +16,7 @@ namespace DemoAppGUI
         public frmLogin()
         {
             InitializeComponent();
-            txtPass.UseSystemPasswordChar = true;
+            
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
@@ -61,7 +61,7 @@ namespace DemoAppGUI
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
-            //txtPass.PasswordChar = '*';
+            txtPass.UseSystemPasswordChar = true;
         }
 
         private void ckHienthiMK_CheckedChanged(object sender, EventArgs e)

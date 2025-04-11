@@ -36,8 +36,6 @@
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
             this.dtpkTo = new System.Windows.Forms.DateTimePicker();
             this.dtpkfrom = new System.Windows.Forms.DateTimePicker();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.dgvThongke = new System.Windows.Forms.DataGridView();
             this.tabThucuong = new System.Windows.Forms.TabPage();
             this.panel6 = new System.Windows.Forms.Panel();
             this.txtTim = new System.Windows.Forms.TextBox();
@@ -125,11 +123,11 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.dgvThongke = new System.Windows.Forms.DataGridView();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.tabControl1.SuspendLayout();
             this.tabDoanhthu.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvThongke)).BeginInit();
             this.tabThucuong.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -173,6 +171,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvThongke)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -221,6 +221,7 @@
             // 
             // dtpkTo
             // 
+            this.dtpkTo.CustomFormat = "dd-MM-yyy";
             this.dtpkTo.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpkTo.Location = new System.Drawing.Point(724, 12);
             this.dtpkTo.Name = "dtpkTo";
@@ -237,26 +238,6 @@
             this.dtpkfrom.Name = "dtpkfrom";
             this.dtpkfrom.Size = new System.Drawing.Size(273, 26);
             this.dtpkfrom.TabIndex = 0;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.dgvThongke);
-            this.panel1.Location = new System.Drawing.Point(6, 68);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1041, 480);
-            this.panel1.TabIndex = 0;
-            // 
-            // dgvThongke
-            // 
-            this.dgvThongke.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.dgvThongke.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvThongke.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.dgvThongke.Location = new System.Drawing.Point(0, 16);
-            this.dgvThongke.Name = "dgvThongke";
-            this.dgvThongke.RowHeadersWidth = 62;
-            this.dgvThongke.RowTemplate.Height = 28;
-            this.dgvThongke.Size = new System.Drawing.Size(1035, 477);
-            this.dgvThongke.TabIndex = 0;
             // 
             // tabThucuong
             // 
@@ -1170,6 +1151,26 @@
             this.button4.TabIndex = 12;
             this.button4.UseVisualStyleBackColor = false;
             // 
+            // dgvThongke
+            // 
+            this.dgvThongke.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.dgvThongke.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvThongke.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.dgvThongke.Location = new System.Drawing.Point(3, 3);
+            this.dgvThongke.Name = "dgvThongke";
+            this.dgvThongke.RowHeadersWidth = 62;
+            this.dgvThongke.RowTemplate.Height = 28;
+            this.dgvThongke.Size = new System.Drawing.Size(1041, 477);
+            this.dgvThongke.TabIndex = 0;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.dgvThongke);
+            this.panel1.Location = new System.Drawing.Point(3, 81);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1047, 483);
+            this.panel1.TabIndex = 0;
+            // 
             // fAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -1178,12 +1179,11 @@
             this.ClientSize = new System.Drawing.Size(1085, 624);
             this.Controls.Add(this.tabControl1);
             this.Name = "fAdmin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin";
             this.tabControl1.ResumeLayout(false);
             this.tabDoanhthu.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvThongke)).EndInit();
             this.tabThucuong.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
@@ -1240,6 +1240,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvThongke)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1253,8 +1255,6 @@
         private System.Windows.Forms.TabPage tabBanan;
         private System.Windows.Forms.TabPage tabTaikhoan;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridView dgvThongke;
         private System.Windows.Forms.DateTimePicker dtpkTo;
         private System.Windows.Forms.DateTimePicker dtpkfrom;
         private System.Windows.Forms.Button btnThongke;
@@ -1341,5 +1341,7 @@
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.DataGridView dgvThongke;
     }
 }

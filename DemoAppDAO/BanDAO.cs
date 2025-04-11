@@ -17,8 +17,8 @@ namespace DemoAppDAO
             private set { BanDAO.instance = value; }
         }
 
-        public static int width = 110;
-        public static int height = 110;
+        public static int width = 100;
+        public static int height = 100;
 
         private BanDAO() { }
 
