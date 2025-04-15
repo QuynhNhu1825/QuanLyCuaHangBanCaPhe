@@ -20,7 +20,7 @@ namespace DemoAppDAO
         public static int width = 100;
         public static int height = 100;
 
-        private BanDAO() { }
+        public BanDAO() { }
 
         public List<BanDTO> LoadDSBan()
         {
@@ -28,7 +28,7 @@ namespace DemoAppDAO
 
             DataTable data = DataProvider.Instance.ExecuteQuery("USP_LAYDSBAN");
 
-            foreach (DataRow item in data.Rows)
+            foreach (DataRow item in data.Rows) 
             {
                 BanDTO table = new BanDTO(item);
                 tableList.Add(table);

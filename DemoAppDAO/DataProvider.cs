@@ -13,7 +13,7 @@ namespace DemoAppDAO
         private static DataProvider instance;//Ctrl+R+E
         private string strChuoiKetNoi = "Data Source=.\\;Initial Catalog=QuanLyQuanCaPhe;Integrated Security=True";
 
-        public static DataProvider Instance 
+        public static DataProvider Instance //singleton dam bao truy cap dung doi tuong
         { 
             get { if (instance == null) instance = new DataProvider();return DataProvider.instance; }
             private set { DataProvider.instance = value; }

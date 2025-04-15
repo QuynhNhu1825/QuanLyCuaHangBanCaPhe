@@ -42,10 +42,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BanDAO.cs" />
-    <Compile Include="Class1.cs" />
+    <Compile Include="ChiTietHoaDonDAO.cs" />
+    <Compile Include="DanhMucDAO.cs" />
     <Compile Include="DataProvider.cs" />
+    <Compile Include="HoaDonDAO.cs" />
+    <Compile Include="MenuDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TaiKhoanDAO.cs" />
+    <Compile Include="ThucUongDAO.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DemoAppDTO\DemoAppDTO.csproj">
