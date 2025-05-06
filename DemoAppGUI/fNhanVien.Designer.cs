@@ -31,14 +31,11 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fNhanVien));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnThoat = new System.Windows.Forms.Button();
-            this.btnLammoi = new System.Windows.Forms.Button();
-            this.btnThemKH = new System.Windows.Forms.Button();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
             this.dgvKh = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
             this.txtTimKH = new System.Windows.Forms.TextBox();
-            this.btnTimKH = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.txtNgaytao = new System.Windows.Forms.TextBox();
@@ -55,7 +52,12 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.txtIDKH = new System.Windows.Forms.TextBox();
             this.dgvKhKH = new System.Windows.Forms.Label();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.btnSuaKH = new System.Windows.Forms.Button();
+            this.btnTimKH = new System.Windows.Forms.Button();
+            this.btnXoaKH = new System.Windows.Forms.Button();
+            this.btnThoat = new System.Windows.Forms.Button();
+            this.btnLammoi = new System.Windows.Forms.Button();
+            this.btnThemKH = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKh)).BeginInit();
@@ -71,7 +73,9 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel1.Controls.Add(this.btnXoaKH);
             this.panel1.Controls.Add(this.btnThoat);
+            this.panel1.Controls.Add(this.btnSuaKH);
             this.panel1.Controls.Add(this.btnLammoi);
             this.panel1.Controls.Add(this.btnThemKH);
             this.panel1.Location = new System.Drawing.Point(12, 12);
@@ -79,38 +83,16 @@
             this.panel1.Size = new System.Drawing.Size(541, 95);
             this.panel1.TabIndex = 0;
             // 
-            // btnThoat
+            // imageList1
             // 
-            this.btnThoat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btnThoat.ImageKey = "3841792_interface_multimedia_off_on_power_icon.png";
-            this.btnThoat.ImageList = this.imageList1;
-            this.btnThoat.Location = new System.Drawing.Point(428, 19);
-            this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(70, 60);
-            this.btnThoat.TabIndex = 1;
-            this.btnThoat.UseVisualStyleBackColor = false;
-            // 
-            // btnLammoi
-            // 
-            this.btnLammoi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btnLammoi.ImageKey = "2571204_refresh_reload_update_recycle_sync_icon.png";
-            this.btnLammoi.ImageList = this.imageList1;
-            this.btnLammoi.Location = new System.Drawing.Point(220, 17);
-            this.btnLammoi.Name = "btnLammoi";
-            this.btnLammoi.Size = new System.Drawing.Size(86, 60);
-            this.btnLammoi.TabIndex = 1;
-            this.btnLammoi.UseVisualStyleBackColor = false;
-            // 
-            // btnThemKH
-            // 
-            this.btnThemKH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btnThemKH.ImageKey = "330410_add_plus_icon.png";
-            this.btnThemKH.ImageList = this.imageList1;
-            this.btnThemKH.Location = new System.Drawing.Point(22, 19);
-            this.btnThemKH.Name = "btnThemKH";
-            this.btnThemKH.Size = new System.Drawing.Size(72, 60);
-            this.btnThemKH.TabIndex = 1;
-            this.btnThemKH.UseVisualStyleBackColor = false;
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "330410_add_plus_icon.png");
+            this.imageList1.Images.SetKeyName(1, "3841792_interface_multimedia_off_on_power_icon.png");
+            this.imageList1.Images.SetKeyName(2, "2571204_refresh_reload_update_recycle_sync_icon.png");
+            this.imageList1.Images.SetKeyName(3, "download (5).png");
+            this.imageList1.Images.SetKeyName(4, "icons8-delete-100.png");
+            this.imageList1.Images.SetKeyName(5, "icons8-edit-50.png");
             // 
             // panel2
             // 
@@ -149,16 +131,6 @@
             this.txtTimKH.Name = "txtTimKH";
             this.txtTimKH.Size = new System.Drawing.Size(283, 60);
             this.txtTimKH.TabIndex = 3;
-            // 
-            // btnTimKH
-            // 
-            this.btnTimKH.ImageKey = "download (5).png";
-            this.btnTimKH.ImageList = this.imageList1;
-            this.btnTimKH.Location = new System.Drawing.Point(317, 17);
-            this.btnTimKH.Name = "btnTimKH";
-            this.btnTimKH.Size = new System.Drawing.Size(89, 60);
-            this.btnTimKH.TabIndex = 2;
-            this.btnTimKH.UseVisualStyleBackColor = true;
             // 
             // panel4
             // 
@@ -314,14 +286,76 @@
             this.dgvKhKH.TabIndex = 2;
             this.dgvKhKH.Text = "ID:";
             // 
-            // imageList1
+            // btnSuaKH
             // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "330410_add_plus_icon.png");
-            this.imageList1.Images.SetKeyName(1, "3841792_interface_multimedia_off_on_power_icon.png");
-            this.imageList1.Images.SetKeyName(2, "2571204_refresh_reload_update_recycle_sync_icon.png");
-            this.imageList1.Images.SetKeyName(3, "download (5).png");
+            this.btnSuaKH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnSuaKH.ImageKey = "icons8-edit-50.png";
+            this.btnSuaKH.ImageList = this.imageList1;
+            this.btnSuaKH.Location = new System.Drawing.Point(217, 21);
+            this.btnSuaKH.Name = "btnSuaKH";
+            this.btnSuaKH.Size = new System.Drawing.Size(75, 58);
+            this.btnSuaKH.TabIndex = 1;
+            this.btnSuaKH.UseVisualStyleBackColor = false;
+            this.btnSuaKH.Click += new System.EventHandler(this.btnSuaKH_Click_1);
+            // 
+            // btnTimKH
+            // 
+            this.btnTimKH.ImageKey = "download (5).png";
+            this.btnTimKH.ImageList = this.imageList1;
+            this.btnTimKH.Location = new System.Drawing.Point(317, 17);
+            this.btnTimKH.Name = "btnTimKH";
+            this.btnTimKH.Size = new System.Drawing.Size(89, 60);
+            this.btnTimKH.TabIndex = 2;
+            this.btnTimKH.UseVisualStyleBackColor = true;
+            this.btnTimKH.Click += new System.EventHandler(this.btnTimKH_Click_1);
+            // 
+            // btnXoaKH
+            // 
+            this.btnXoaKH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnXoaKH.ImageIndex = 4;
+            this.btnXoaKH.ImageList = this.imageList1;
+            this.btnXoaKH.Location = new System.Drawing.Point(118, 19);
+            this.btnXoaKH.Name = "btnXoaKH";
+            this.btnXoaKH.Size = new System.Drawing.Size(72, 60);
+            this.btnXoaKH.TabIndex = 4;
+            this.btnXoaKH.UseVisualStyleBackColor = false;
+            this.btnXoaKH.Click += new System.EventHandler(this.btnXoaKH_Click_1);
+            // 
+            // btnThoat
+            // 
+            this.btnThoat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnThoat.ImageKey = "3841792_interface_multimedia_off_on_power_icon.png";
+            this.btnThoat.ImageList = this.imageList1;
+            this.btnThoat.Location = new System.Drawing.Point(428, 19);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(76, 60);
+            this.btnThoat.TabIndex = 1;
+            this.btnThoat.UseVisualStyleBackColor = false;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click_1);
+            // 
+            // btnLammoi
+            // 
+            this.btnLammoi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnLammoi.ImageKey = "2571204_refresh_reload_update_recycle_sync_icon.png";
+            this.btnLammoi.ImageList = this.imageList1;
+            this.btnLammoi.Location = new System.Drawing.Point(317, 20);
+            this.btnLammoi.Name = "btnLammoi";
+            this.btnLammoi.Size = new System.Drawing.Size(80, 58);
+            this.btnLammoi.TabIndex = 1;
+            this.btnLammoi.UseVisualStyleBackColor = false;
+            this.btnLammoi.Click += new System.EventHandler(this.btnLammoi_Click_1);
+            // 
+            // btnThemKH
+            // 
+            this.btnThemKH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnThemKH.ImageKey = "330410_add_plus_icon.png";
+            this.btnThemKH.ImageList = this.imageList1;
+            this.btnThemKH.Location = new System.Drawing.Point(22, 19);
+            this.btnThemKH.Name = "btnThemKH";
+            this.btnThemKH.Size = new System.Drawing.Size(81, 60);
+            this.btnThemKH.TabIndex = 1;
+            this.btnThemKH.UseVisualStyleBackColor = false;
+            this.btnThemKH.Click += new System.EventHandler(this.btnThemKH_Click_1);
             // 
             // fNhanVien
             // 
@@ -333,6 +367,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "fNhanVien";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Nhân viên";
             this.Load += new System.EventHandler(this.fNhanVien_Load);
             this.panel1.ResumeLayout(false);
@@ -383,5 +418,7 @@
         private System.Windows.Forms.TextBox txtTenKH;
         private System.Windows.Forms.Label lblTenKH;
         private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.Button btnXoaKH;
+        private System.Windows.Forms.Button btnSuaKH;
     }
 }

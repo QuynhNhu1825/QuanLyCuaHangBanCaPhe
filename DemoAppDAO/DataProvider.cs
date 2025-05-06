@@ -4,6 +4,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace DemoAppDAO
@@ -48,32 +49,39 @@ namespace DemoAppDAO
             return data;
 
         }
-        public int ExecuteNonQuery(string query, object[] panameter = null)//so dong thuc thi (insert/delete/update)
+        public int ExecuteNonQuery(string query, object[] parameters = null)//so dong thuc thi (insert/delete/update)
         {
             int data = 0;
 
             using (SqlConnection conn = new SqlConnection(strChuoiKetNoi))
             {
                 conn.Open();
-                SqlCommand com = new SqlCommand(query, conn);
-                if (panameter != null)
+                using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
-                    string[] listPara = query.Split(' ');
-                    int i = 0;
-                    foreach (string item in listPara)
+                    if (parameters != null)
                     {
-                        if (item.Contains('@'))
+                        // Dùng Regex để tìm tất cả tham số trong query (bắt đầu bằng @)
+                        MatchCollection matches = Regex.Matches(query, @"@\w+");
+                        int i = 0;
+
+                        foreach (Match match in matches)
                         {
-                            com.Parameters.AddWithValue(item, panameter[i]);
-                            i++;
+                            string paramName = match.Value;
+
+                            // Tránh lỗi khi số lượng parameters không khớp
+                            if (i < parameters.Length)
+                            {
+                                cmd.Parameters.AddWithValue(paramName, parameters[i]);
+                                i++;
+                            }
                         }
                     }
-                }
-                data = com.ExecuteNonQuery();
-                conn.Close();
-            }
-            return data;
 
+                    data = cmd.ExecuteNonQuery();
+                }
+            }
+
+            return data;
         }
         public object ExecuteScalar(string query, object[] panameter = null)//tra 1 kq(count,sum,...)
         {

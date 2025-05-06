@@ -183,6 +183,175 @@ namespace DemoAppGUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_add_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-add-100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_coffee_shop_50__1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-coffee-shop-50 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_coffee_shop_50__3_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-coffee-shop-50 (3)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_coffee_shop_64__1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-coffee-shop-64 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_coffee_to_go_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-coffee-to-go-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_delete_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-delete-100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Màu_đào_và_Nâu_Phông_chữ_Hình_vẽ_một_nét_Đơn_giản_Sản_phẩm_Cà_phê_Biểu_trưng_Cà_phê {
+            get {
+                object obj = ResourceManager.GetObject("Màu đào và Nâu Phông chữ Hình vẽ một nét Đơn giản Sản phẩm Cà phê Biểu trưng Cà p" +
+                        "hê", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Màu_đào_và_Nâu_Phông_chữ_Hình_vẽ_một_nét_Đơn_giản_Sản_phẩm_Cà_phê_Biểu_trưng_Cà_phê1 {
+            get {
+                object obj = ResourceManager.GetObject("Màu đào và Nâu Phông chữ Hình vẽ một nét Đơn giản Sản phẩm Cà phê Biểu trưng Cà p" +
+                        "hê1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Màu_đào_và_Nâu_Phông_chữ_Hình_vẽ_một_nét_Đơn_giản_Sản_phẩm_Cà_phê_Biểu_trưng_Cà_phê2 {
+            get {
+                object obj = ResourceManager.GetObject("Màu đào và Nâu Phông chữ Hình vẽ một nét Đơn giản Sản phẩm Cà phê Biểu trưng Cà p" +
+                        "hê2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Màu_đào_và_Nâu_Phông_chữ_Hình_vẽ_một_nét_Đơn_giản_Sản_phẩm_Cà_phê_Biểu_trưng_Cà_phê3 {
+            get {
+                object obj = ResourceManager.GetObject("Màu đào và Nâu Phông chữ Hình vẽ một nét Đơn giản Sản phẩm Cà phê Biểu trưng Cà p" +
+                        "hê3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Màu_đào_và_Nâu_Phông_chữ_Hình_vẽ_một_nét_Đơn_giản_Sản_phẩm_Cà_phê_Biểu_trưng_Cà_phê4 {
+            get {
+                object obj = ResourceManager.GetObject("Màu đào và Nâu Phông chữ Hình vẽ một nét Đơn giản Sản phẩm Cà phê Biểu trưng Cà p" +
+                        "hê4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Màu_đào_và_Nâu_Phông_chữ_Hình_vẽ_một_nét_Đơn_giản_Sản_phẩm_Cà_phê_Biểu_trưng_Cà_phê5 {
+            get {
+                object obj = ResourceManager.GetObject("Màu đào và Nâu Phông chữ Hình vẽ một nét Đơn giản Sản phẩm Cà phê Biểu trưng Cà p" +
+                        "hê5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Màu_đào_và_Nâu_Phông_chữ_Hình_vẽ_một_nét_Đơn_giản_Sản_phẩm_Cà_phê_Biểu_trưng_Cà_phê6 {
+            get {
+                object obj = ResourceManager.GetObject("Màu đào và Nâu Phông chữ Hình vẽ một nét Đơn giản Sản phẩm Cà phê Biểu trưng Cà p" +
+                        "hê6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Màu_đào_và_Nâu_Phông_chữ_Hình_vẽ_một_nét_Đơn_giản_Sản_phẩm_Cà_phê_Biểu_trưng_Cà_phê7 {
+            get {
+                object obj = ResourceManager.GetObject("Màu đào và Nâu Phông chữ Hình vẽ một nét Đơn giản Sản phẩm Cà phê Biểu trưng Cà p" +
+                        "hê7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Màu_đào_và_Nâu_Phông_chữ_Hình_vẽ_một_nét_Đơn_giản_Sản_phẩm_Cà_phê_Biểu_trưng_Cà_phê8 {
+            get {
+                object obj = ResourceManager.GetObject("Màu đào và Nâu Phông chữ Hình vẽ một nét Đơn giản Sản phẩm Cà phê Biểu trưng Cà p" +
+                        "hê8", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap snapedit_1744729966755 {
+            get {
+                object obj = ResourceManager.GetObject("snapedit_1744729966755", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap z6423047769427_98572fec2ce9451c90f45755a6fedb62 {
             get {
                 object obj = ResourceManager.GetObject("z6423047769427_98572fec2ce9451c90f45755a6fedb62", resourceCulture);

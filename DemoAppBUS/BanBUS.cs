@@ -11,10 +11,15 @@ namespace DemoAppBUS
     public class BanBUS
     {
        
+        private BanDAO ban=new BanDAO();
         public List<BanDTO> LoadDSBan()
         {
-            BanDAO dsban = new BanDAO();
-            return dsban.LoadDSBan();
+            return ban.LoadDSBan();
         }
+        public void ChuyenBan(char idban, char idbanmoi)
+        {
+            ban.ChuyenBan(idban, idbanmoi);
+        }
+
     }
 }

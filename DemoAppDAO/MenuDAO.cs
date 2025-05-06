@@ -17,7 +17,7 @@ namespace DemoAppDAO
             private set { MenuDAO.instance = value; }
         }
 
-        private MenuDAO() { }
+        public MenuDAO() { }
 
         public List<MenuDTO> DSMenu(char id)
         {
@@ -34,5 +34,7 @@ namespace DemoAppDAO
 
             return listMenu;
         }
+
+        
     }
 }

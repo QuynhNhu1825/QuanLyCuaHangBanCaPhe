@@ -18,13 +18,13 @@ namespace DemoAppDAO
             private set { DanhMucDAO.instance = value; }
         }
 
-        private DanhMucDAO() { }
+        public DanhMucDAO() { }
 
         public List<DanhMucDTO> LoadDanhmuc()
         {
             List<DanhMucDTO> list = new List<DanhMucDTO>();
 
-            string query = "SELECT * FROM DanhMucThucUong" ;
+            string query = "SELECT * FROM DanhMucThucUong WHERE TrangThaiDM=1" ;
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
 
             foreach (DataRow item in data.Rows)
@@ -35,5 +35,37 @@ namespace DemoAppDAO
 
             return list;
         }
+        public DanhMucDTO LayDanhMucBangID(int id)
+        {
+            DanhMucDTO danhmuc = null;
+            string query = "SELECT * FROM DanhMucThucUong WHERE MaDM= @id AND TrangThaiDM=1";
+            DataTable data = DataProvider.Instance.ExecuteQuery(query, new object[] { id });
+
+            foreach (DataRow item in data.Rows)
+            {
+                danhmuc = new DanhMucDTO(item);
+
+            }
+            return danhmuc;
+        }
+        public bool ThemDanhMuc(string tenDM)
+        {
+            string query = "INSERT INTO DanhMucThucUong (TenDM) VALUES (@tenDM)";
+            int result = DataProvider.Instance.ExecuteNonQuery(query, new object[] { tenDM });
+            return result > 0;
+        }
+        public bool AnDanhMuc(int maDM)
+        {
+            string query = "UPDATE DanhMucThucUong SET TrangThaiDM = 0 WHERE MaDM = @maDM";
+            int result = DataProvider.Instance.ExecuteNonQuery(query, new object[] { maDM });
+            return result > 0;
+        }
+        public bool SuaDanhMuc(int maDM, string tenDM)
+        {
+            string query = "UPDATE DanhMucThucUong SET TenDM = @tenMoi WHERE MaDM = @maDM AND TrangThaiDM = 1";
+            int result = DataProvider.Instance.ExecuteNonQuery(query, new object[] { tenDM, maDM });
+            return result > 0;
+        }
+
     }
 }

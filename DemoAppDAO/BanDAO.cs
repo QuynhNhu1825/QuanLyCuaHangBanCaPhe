@@ -17,8 +17,8 @@ namespace DemoAppDAO
             private set { BanDAO.instance = value; }
         }
 
-        public static int width = 100;
-        public static int height = 100;
+        public static int width = 102;
+        public static int height = 102;
 
         public BanDAO() { }
 
@@ -26,7 +26,8 @@ namespace DemoAppDAO
         {
             List<BanDTO> tableList = new List<BanDTO>();
 
-            DataTable data = DataProvider.Instance.ExecuteQuery("USP_LAYDSBAN");
+            string query = "SELECT * FROM Ban";
+            DataTable data = DataProvider.Instance.ExecuteQuery(query);
 
             foreach (DataRow item in data.Rows) 
             {
@@ -35,6 +36,12 @@ namespace DemoAppDAO
             }
 
             return tableList;
+        }
+
+        public void ChuyenBan(char idban, char idbanmoi)
+        {
+            string query = "USP_ChuyenBan @idban , @idbanmoi";
+            DataProvider.Instance.ExecuteNonQuery(query, new object[] { idban, idbanmoi });
         }
     }
 }
